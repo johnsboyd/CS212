@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52081D3918DC0A7A0074CFAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52081D3818DC0A7A0074CFAD /* Foundation.framework */; };
+		52081D3B18DC0A7A0074CFAD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52081D3A18DC0A7A0074CFAD /* CoreGraphics.framework */; };
+		52081D3D18DC0A7A0074CFAD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52081D3C18DC0A7A0074CFAD /* UIKit.framework */; };
+		52081D4318DC0A7A0074CFAD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52081D4118DC0A7A0074CFAD /* InfoPlist.strings */; };
+		52081D4518DC0A7A0074CFAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52081D4418DC0A7A0074CFAD /* main.m */; };
+		52081D4918DC0A7A0074CFAD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52081D4818DC0A7A0074CFAD /* AppDelegate.m */; };
+		52081D4C18DC0A7A0074CFAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52081D4A18DC0A7A0074CFAD /* Main.storyboard */; };
+		52081D4F18DC0A7A0074CFAD /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52081D4E18DC0A7A0074CFAD /* MasterViewController.m */; };
+		52081D5218DC0A7A0074CFAD /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52081D5118DC0A7A0074CFAD /* DetailViewController.m */; };
+		52081D5418DC0A7A0074CFAD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52081D5318DC0A7A0074CFAD /* Images.xcassets */; };
+		52081D5B18DC0A7A0074CFAD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52081D5A18DC0A7A0074CFAD /* XCTest.framework */; };
+		52081D5C18DC0A7A0074CFAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52081D3818DC0A7A0074CFAD /* Foundation.framework */; };
+		52081D5D18DC0A7A0074CFAD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52081D3C18DC0A7A0074CFAD /* UIKit.framework */; };
+		52081D6518DC0A7B0074CFAD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52081D6318DC0A7B0074CFAD /* InfoPlist.strings */; };
+		52081D6718DC0A7B0074CFAD /* AnimalTableIITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52081D6618DC0A7B0074CFAD /* AnimalTableIITests.m */; };
+		520A25A118DEC37200C8AD1C /* AnimalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 520A25A018DEC37200C8AD1C /* AnimalModel.m */; };
+		520A25B618DEC47B00C8AD1C /* animalNames.plist in Resources */ = {isa = PBXBuildFile; fileRef = 520A25A318DEC47B00C8AD1C /* animalNames.plist */; };
+		520A25B718DEC47B00C8AD1C /* chicken.png in Resources */ = {isa = PBXBuildFile; fileRef = 520A25A418DEC47B00C8AD1C /* chicken.png */; };
+		520A25B818DEC47B00C8AD1C /* chicken.thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 520A25A518DEC47B00C8AD1C /* chicken.thumb.png */; };
+		520A25B918DEC47B00C8AD1C /* dingo.png in Resources */ = {isa = PBXBuildFile; fileRef = 520A25A618DEC47B00C8AD1C /* dingo.png */; };
+		520A25BA18DEC47B00C8AD1C /* dingo.thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 520A25A718DEC47B00C8AD1C /* dingo.thumb.png */; };
+		520A25BB18DEC47B00C8AD1C /* horse.png in Resources */ = {isa = PBXBuildFile; fileRef = 520A25A818DEC47B00C8AD1C /* horse.png */; };
+		520A25BC18DEC47B00C8AD1C /* horse.thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 520A25A918DEC47B00C8AD1C /* horse.thumb.png */; };
+		520A25BD18DEC47B00C8AD1C /* jellyfish.png in Resources */ = {isa = PBXBuildFile; fileRef = 520A25AA18DEC47B00C8AD1C /* jellyfish.png */; };
+		520A25BE18DEC47B00C8AD1C /* jellyfish.thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 520A25AB18DEC47B00C8AD1C /* jellyfish.thumb.png */; };
+		520A25BF18DEC47B00C8AD1C /* lizard.png in Resources */ = {isa = PBXBuildFile; fileRef = 520A25AC18DEC47B00C8AD1C /* lizard.png */; };
+		520A25C018DEC47B00C8AD1C /* lizard.thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 520A25AD18DEC47B00C8AD1C /* lizard.thumb.png */; };
+		520A25C118DEC47B00C8AD1C /* penguin.png in Resources */ = {isa = PBXBuildFile; fileRef = 520A25AE18DEC47B00C8AD1C /* penguin.png */; };
+		520A25C218DEC47B00C8AD1C /* penguin.thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 520A25AF18DEC47B00C8AD1C /* penguin.thumb.png */; };
+		520A25C318DEC47B00C8AD1C /* pig.png in Resources */ = {isa = PBXBuildFile; fileRef = 520A25B018DEC47B00C8AD1C /* pig.png */; };
+		520A25C418DEC47B00C8AD1C /* pig.thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 520A25B118DEC47B00C8AD1C /* pig.thumb.png */; };
+		520A25C518DEC47B00C8AD1C /* starfish.png in Resources */ = {isa = PBXBuildFile; fileRef = 520A25B218DEC47B00C8AD1C /* starfish.png */; };
+		520A25C618DEC47B00C8AD1C /* starfish.thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 520A25B318DEC47B00C8AD1C /* starfish.thumb.png */; };
+		520A25C718DEC47B00C8AD1C /* turtle.png in Resources */ = {isa = PBXBuildFile; fileRef = 520A25B418DEC47B00C8AD1C /* turtle.png */; };
+		520A25C818DEC47B00C8AD1C /* turtle.thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 520A25B518DEC47B00C8AD1C /* turtle.thumb.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52081D5E18DC0A7A0074CFAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52081D2D18DC0A7A0074CFAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52081D3418DC0A7A0074CFAD;
+			remoteInfo = AnimalTableII;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		52081D3518DC0A7A0074CFAD /* AnimalTableII.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimalTableII.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52081D3818DC0A7A0074CFAD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		52081D3A18DC0A7A0074CFAD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		52081D3C18DC0A7A0074CFAD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		52081D4018DC0A7A0074CFAD /* AnimalTableII-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AnimalTableII-Info.plist"; sourceTree = "<group>"; };
+		52081D4218DC0A7A0074CFAD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		52081D4418DC0A7A0074CFAD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		52081D4618DC0A7A0074CFAD /* AnimalTableII-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AnimalTableII-Prefix.pch"; sourceTree = "<group>"; };
+		52081D4718DC0A7A0074CFAD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		52081D4818DC0A7A0074CFAD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		52081D4B18DC0A7A0074CFAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52081D4D18DC0A7A0074CFAD /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		52081D4E18DC0A7A0074CFAD /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		52081D5018DC0A7A0074CFAD /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		52081D5118DC0A7A0074CFAD /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		52081D5318DC0A7A0074CFAD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		52081D5918DC0A7A0074CFAD /* AnimalTableIITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimalTableIITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52081D5A18DC0A7A0074CFAD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		52081D6218DC0A7B0074CFAD /* AnimalTableIITests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AnimalTableIITests-Info.plist"; sourceTree = "<group>"; };
+		52081D6418DC0A7B0074CFAD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		52081D6618DC0A7B0074CFAD /* AnimalTableIITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimalTableIITests.m; sourceTree = "<group>"; };
+		520A259F18DEC37200C8AD1C /* AnimalModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimalModel.h; sourceTree = "<group>"; };
+		520A25A018DEC37200C8AD1C /* AnimalModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimalModel.m; sourceTree = "<group>"; };
+		520A25A318DEC47B00C8AD1C /* animalNames.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = animalNames.plist; sourceTree = "<group>"; };
+		520A25A418DEC47B00C8AD1C /* chicken.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chicken.png; sourceTree = "<group>"; };
+		520A25A518DEC47B00C8AD1C /* chicken.thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chicken.thumb.png; sourceTree = "<group>"; };
+		520A25A618DEC47B00C8AD1C /* dingo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dingo.png; sourceTree = "<group>"; };
+		520A25A718DEC47B00C8AD1C /* dingo.thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dingo.thumb.png; sourceTree = "<group>"; };
+		520A25A818DEC47B00C8AD1C /* horse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horse.png; sourceTree = "<group>"; };
+		520A25A918DEC47B00C8AD1C /* horse.thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horse.thumb.png; sourceTree = "<group>"; };
+		520A25AA18DEC47B00C8AD1C /* jellyfish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jellyfish.png; sourceTree = "<group>"; };
+		520A25AB18DEC47B00C8AD1C /* jellyfish.thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jellyfish.thumb.png; sourceTree = "<group>"; };
+		520A25AC18DEC47B00C8AD1C /* lizard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lizard.png; sourceTree = "<group>"; };
+		520A25AD18DEC47B00C8AD1C /* lizard.thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lizard.thumb.png; sourceTree = "<group>"; };
+		520A25AE18DEC47B00C8AD1C /* penguin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = penguin.png; sourceTree = "<group>"; };
+		520A25AF18DEC47B00C8AD1C /* penguin.thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = penguin.thumb.png; sourceTree = "<group>"; };
+		520A25B018DEC47B00C8AD1C /* pig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pig.png; sourceTree = "<group>"; };
+		520A25B118DEC47B00C8AD1C /* pig.thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pig.thumb.png; sourceTree = "<group>"; };
+		520A25B218DEC47B00C8AD1C /* starfish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starfish.png; sourceTree = "<group>"; };
+		520A25B318DEC47B00C8AD1C /* starfish.thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starfish.thumb.png; sourceTree = "<group>"; };
+		520A25B418DEC47B00C8AD1C /* turtle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = turtle.png; sourceTree = "<group>"; };
+		520A25B518DEC47B00C8AD1C /* turtle.thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = turtle.thumb.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52081D3218DC0A7A0074CFAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52081D3B18DC0A7A0074CFAD /* CoreGraphics.framework in Frameworks */,
+				52081D3D18DC0A7A0074CFAD /* UIKit.framework in Frameworks */,
+				52081D3918DC0A7A0074CFAD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52081D5618DC0A7A0074CFAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52081D5B18DC0A7A0074CFAD /* XCTest.framework in Frameworks */,
+				52081D5D18DC0A7A0074CFAD /* UIKit.framework in Frameworks */,
+				52081D5C18DC0A7A0074CFAD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52081D2C18DC0A7A0074CFAD = {
+			isa = PBXGroup;
+			children = (
+				52081D3E18DC0A7A0074CFAD /* AnimalTableII */,
+				52081D6018DC0A7A0074CFAD /* AnimalTableIITests */,
+				52081D3718DC0A7A0074CFAD /* Frameworks */,
+				52081D3618DC0A7A0074CFAD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52081D3618DC0A7A0074CFAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52081D3518DC0A7A0074CFAD /* AnimalTableII.app */,
+				52081D5918DC0A7A0074CFAD /* AnimalTableIITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52081D3718DC0A7A0074CFAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52081D3818DC0A7A0074CFAD /* Foundation.framework */,
+				52081D3A18DC0A7A0074CFAD /* CoreGraphics.framework */,
+				52081D3C18DC0A7A0074CFAD /* UIKit.framework */,
+				52081D5A18DC0A7A0074CFAD /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52081D3E18DC0A7A0074CFAD /* AnimalTableII */ = {
+			isa = PBXGroup;
+			children = (
+				520A25A218DEC47B00C8AD1C /* Resources */,
+				520A259F18DEC37200C8AD1C /* AnimalModel.h */,
+				520A25A018DEC37200C8AD1C /* AnimalModel.m */,
+				52081D4718DC0A7A0074CFAD /* AppDelegate.h */,
+				52081D4818DC0A7A0074CFAD /* AppDelegate.m */,
+				52081D4A18DC0A7A0074CFAD /* Main.storyboard */,
+				52081D4D18DC0A7A0074CFAD /* MasterViewController.h */,
+				52081D4E18DC0A7A0074CFAD /* MasterViewController.m */,
+				52081D5018DC0A7A0074CFAD /* DetailViewController.h */,
+				52081D5118DC0A7A0074CFAD /* DetailViewController.m */,
+				52081D5318DC0A7A0074CFAD /* Images.xcassets */,
+				52081D3F18DC0A7A0074CFAD /* Supporting Files */,
+			);
+			path = AnimalTableII;
+			sourceTree = "<group>";
+		};
+		52081D3F18DC0A7A0074CFAD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				52081D4018DC0A7A0074CFAD /* AnimalTableII-Info.plist */,
+				52081D4118DC0A7A0074CFAD /* InfoPlist.strings */,
+				52081D4418DC0A7A0074CFAD /* main.m */,
+				52081D4618DC0A7A0074CFAD /* AnimalTableII-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		52081D6018DC0A7A0074CFAD /* AnimalTableIITests */ = {
+			isa = PBXGroup;
+			children = (
+				52081D6618DC0A7B0074CFAD /* AnimalTableIITests.m */,
+				52081D6118DC0A7B0074CFAD /* Supporting Files */,
+			);
+			path = AnimalTableIITests;
+			sourceTree = "<group>";
+		};
+		52081D6118DC0A7B0074CFAD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				52081D6218DC0A7B0074CFAD /* AnimalTableIITests-Info.plist */,
+				52081D6318DC0A7B0074CFAD /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		520A25A218DEC47B00C8AD1C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				520A25A318DEC47B00C8AD1C /* animalNames.plist */,
+				520A25A418DEC47B00C8AD1C /* chicken.png */,
+				520A25A518DEC47B00C8AD1C /* chicken.thumb.png */,
+				520A25A618DEC47B00C8AD1C /* dingo.png */,
+				520A25A718DEC47B00C8AD1C /* dingo.thumb.png */,
+				520A25A818DEC47B00C8AD1C /* horse.png */,
+				520A25A918DEC47B00C8AD1C /* horse.thumb.png */,
+				520A25AA18DEC47B00C8AD1C /* jellyfish.png */,
+				520A25AB18DEC47B00C8AD1C /* jellyfish.thumb.png */,
+				520A25AC18DEC47B00C8AD1C /* lizard.png */,
+				520A25AD18DEC47B00C8AD1C /* lizard.thumb.png */,
+				520A25AE18DEC47B00C8AD1C /* penguin.png */,
+				520A25AF18DEC47B00C8AD1C /* penguin.thumb.png */,
+				520A25B018DEC47B00C8AD1C /* pig.png */,
+				520A25B118DEC47B00C8AD1C /* pig.thumb.png */,
+				520A25B218DEC47B00C8AD1C /* starfish.png */,
+				520A25B318DEC47B00C8AD1C /* starfish.thumb.png */,
+				520A25B418DEC47B00C8AD1C /* turtle.png */,
+				520A25B518DEC47B00C8AD1C /* turtle.thumb.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52081D3418DC0A7A0074CFAD /* AnimalTableII */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52081D6A18DC0A7B0074CFAD /* Build configuration list for PBXNativeTarget "AnimalTableII" */;
+			buildPhases = (
+				52081D3118DC0A7A0074CFAD /* Sources */,
+				52081D3218DC0A7A0074CFAD /* Frameworks */,
+				52081D3318DC0A7A0074CFAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnimalTableII;
+			productName = AnimalTableII;
+			productReference = 52081D3518DC0A7A0074CFAD /* AnimalTableII.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52081D5818DC0A7A0074CFAD /* AnimalTableIITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52081D6D18DC0A7B0074CFAD /* Build configuration list for PBXNativeTarget "AnimalTableIITests" */;
+			buildPhases = (
+				52081D5518DC0A7A0074CFAD /* Sources */,
+				52081D5618DC0A7A0074CFAD /* Frameworks */,
+				52081D5718DC0A7A0074CFAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52081D5F18DC0A7A0074CFAD /* PBXTargetDependency */,
+			);
+			name = AnimalTableIITests;
+			productName = AnimalTableIITests;
+			productReference = 52081D5918DC0A7A0074CFAD /* AnimalTableIITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52081D2D18DC0A7A0074CFAD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "John Boyd";
+				TargetAttributes = {
+					52081D5818DC0A7A0074CFAD = {
+						TestTargetID = 52081D3418DC0A7A0074CFAD;
+					};
+				};
+			};
+			buildConfigurationList = 52081D3018DC0A7A0074CFAD /* Build configuration list for PBXProject "AnimalTableII" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52081D2C18DC0A7A0074CFAD;
+			productRefGroup = 52081D3618DC0A7A0074CFAD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52081D3418DC0A7A0074CFAD /* AnimalTableII */,
+				52081D5818DC0A7A0074CFAD /* AnimalTableIITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52081D3318DC0A7A0074CFAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				520A25C418DEC47B00C8AD1C /* pig.thumb.png in Resources */,
+				520A25C818DEC47B00C8AD1C /* turtle.thumb.png in Resources */,
+				52081D5418DC0A7A0074CFAD /* Images.xcassets in Resources */,
+				520A25C718DEC47B00C8AD1C /* turtle.png in Resources */,
+				520A25BB18DEC47B00C8AD1C /* horse.png in Resources */,
+				520A25C618DEC47B00C8AD1C /* starfish.thumb.png in Resources */,
+				520A25BE18DEC47B00C8AD1C /* jellyfish.thumb.png in Resources */,
+				520A25C118DEC47B00C8AD1C /* penguin.png in Resources */,
+				520A25BA18DEC47B00C8AD1C /* dingo.thumb.png in Resources */,
+				520A25BD18DEC47B00C8AD1C /* jellyfish.png in Resources */,
+				520A25B618DEC47B00C8AD1C /* animalNames.plist in Resources */,
+				520A25C518DEC47B00C8AD1C /* starfish.png in Resources */,
+				52081D4318DC0A7A0074CFAD /* InfoPlist.strings in Resources */,
+				520A25C318DEC47B00C8AD1C /* pig.png in Resources */,
+				520A25C218DEC47B00C8AD1C /* penguin.thumb.png in Resources */,
+				52081D4C18DC0A7A0074CFAD /* Main.storyboard in Resources */,
+				520A25BF18DEC47B00C8AD1C /* lizard.png in Resources */,
+				520A25B718DEC47B00C8AD1C /* chicken.png in Resources */,
+				520A25BC18DEC47B00C8AD1C /* horse.thumb.png in Resources */,
+				520A25C018DEC47B00C8AD1C /* lizard.thumb.png in Resources */,
+				520A25B918DEC47B00C8AD1C /* dingo.png in Resources */,
+				520A25B818DEC47B00C8AD1C /* chicken.thumb.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52081D5718DC0A7A0074CFAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52081D6518DC0A7B0074CFAD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52081D3118DC0A7A0074CFAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52081D4918DC0A7A0074CFAD /* AppDelegate.m in Sources */,
+				52081D4F18DC0A7A0074CFAD /* MasterViewController.m in Sources */,
+				520A25A118DEC37200C8AD1C /* AnimalModel.m in Sources */,
+				52081D4518DC0A7A0074CFAD /* main.m in Sources */,
+				52081D5218DC0A7A0074CFAD /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52081D5518DC0A7A0074CFAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52081D6718DC0A7B0074CFAD /* AnimalTableIITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52081D5F18DC0A7A0074CFAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52081D3418DC0A7A0074CFAD /* AnimalTableII */;
+			targetProxy = 52081D5E18DC0A7A0074CFAD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		52081D4118DC0A7A0074CFAD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52081D4218DC0A7A0074CFAD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		52081D4A18DC0A7A0074CFAD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52081D4B18DC0A7A0074CFAD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52081D6318DC0A7B0074CFAD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52081D6418DC0A7B0074CFAD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52081D6818DC0A7B0074CFAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		52081D6918DC0A7B0074CFAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52081D6B18DC0A7B0074CFAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AnimalTableII/AnimalTableII-Prefix.pch";
+				INFOPLIST_FILE = "AnimalTableII/AnimalTableII-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		52081D6C18DC0A7B0074CFAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AnimalTableII/AnimalTableII-Prefix.pch";
+				INFOPLIST_FILE = "AnimalTableII/AnimalTableII-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		52081D6E18DC0A7B0074CFAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AnimalTableII.app/AnimalTableII";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AnimalTableII/AnimalTableII-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AnimalTableIITests/AnimalTableIITests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		52081D6F18DC0A7B0074CFAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AnimalTableII.app/AnimalTableII";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AnimalTableII/AnimalTableII-Prefix.pch";
+				INFOPLIST_FILE = "AnimalTableIITests/AnimalTableIITests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52081D3018DC0A7A0074CFAD /* Build configuration list for PBXProject "AnimalTableII" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52081D6818DC0A7B0074CFAD /* Debug */,
+				52081D6918DC0A7B0074CFAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52081D6A18DC0A7B0074CFAD /* Build configuration list for PBXNativeTarget "AnimalTableII" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52081D6B18DC0A7B0074CFAD /* Debug */,
+				52081D6C18DC0A7B0074CFAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52081D6D18DC0A7B0074CFAD /* Build configuration list for PBXNativeTarget "AnimalTableIITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52081D6E18DC0A7B0074CFAD /* Debug */,
+				52081D6F18DC0A7B0074CFAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52081D2D18DC0A7A0074CFAD /* Project object */;
+}

@@ -1,0 +1,33 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 Shapes Homework\
+CS212\
+John Boyd\
+\
+\
+1) In order to omit the setter method and prevent dot-notation assignment while leaving getter method unaffected.  In every inherited version we will never use a setter method within \'93area\'94.\
+\
+2a) A property allows external classes access to getter and setter methods into a class whereas an instance variable alone is essentially invisible externally.  An instance class needs setter/getter methods to become visible outside which is what creating a property does automatically.\
+  \
+2b) The setter and getter methods for \'91x\'92 and \'91y\'92.\
+\
+3a) The \'91area\'92 method in the \'91shape\'92 class gets inherited into \'91circle\'92 class.  \
+\
+3b) Yes, the \'91area\'92 method is overridden because initially it only returns a \'910\'92 in the \'91shape\'92 class but the \'91circle\'92 class returns pi*r*r.\
+\
+4) Polymorphism occurs when there is a hierarchy of classes and they are related by inheritance.  So we have:\
+\
+-the \'91circle\'92 class inheriting the \'91shape\'92 class\
+-the \'91rectangle\'92 class inheriting the \'91shape\'92 class\
+and eventually\
+-the \'92square\'92 class inheriting the \'91rectangle\'92 class which inherits the shape class\
+\
+Within those classes we have subcomponents that at times get inherited like:\
+\
+x, y, area, height, width properties\
+area method \
+}
